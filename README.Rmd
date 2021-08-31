@@ -1,0 +1,56 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# vicbabynames
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This is a wrapper to the Victorian Government Popular Baby Names API. See https://wovg-community.portal.prod.api.vic.gov.au/api-catalogue
+
+This is just a test, but the package works.
+
+## Installation
+
+You can install the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("williamlai2/vicbabynames")
+```
+## Example
+
+If you don't have an API Key, you can get one for free from https://wovg-community.portal.prod.api.vic.gov.au/
+
+```{r}
+library(vicbabynames)
+
+# set your api key - this is just the sample available from the Vic Gov website.
+#set_api_key()
+```
+
+It is probably better to `get_all_data()` then filter using `dplyr` later.
+
+```{r}
+get_all_data()
+```
+
+But you can filter by a year if you want. Data is available from 2008 onwards.
+
+```{r}
+get_year_data(2008)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN
