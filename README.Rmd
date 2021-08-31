@@ -37,7 +37,7 @@ If you don't have an API Key, you can get one for free from https://wovg-communi
 ```{r}
 library(vicbabynames)
 
-# set your api key - this is just the sample available from the Vic Gov website.
+# set your api key - if you want, use the sample available from the Vic Gov website.
 #set_api_key()
 ```
 

@@ -32,7 +32,7 @@ library(vicbabynames)
 #> when loading 'vicbabynames'
 #> API key loaded!
 
-# set your api key - this is just the sample available from the Vic Gov website.
+# set your api key - if you want, use the sample available from the Vic Gov website.
 #set_api_key()
 ```
 
