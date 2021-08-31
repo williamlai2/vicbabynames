@@ -77,6 +77,3 @@ get_year_data(2008)
 #> 10        5 Charlotte   414 FEMALE  2008
 #> # ... with 90 more rows
 ```
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN
