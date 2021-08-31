@@ -3,18 +3,19 @@
 \name{setup}
 \alias{setup}
 \alias{set_api_key}
-\title{Setup}
+\title{Setup API Key}
 \usage{
 set_api_key(key)
 }
 \arguments{
-\item{key}{Your API key, freely available at \url{https://wovg-community.portal.prod.api.vic.gov.au/}.}
+\item{key}{Your API key, freely available at
+\url{https://wovg-community.portal.prod.api.vic.gov.au/}.}
 }
 \description{
-Setup your session, all subsequent calls will be done using the API key.
+Setup your session, all subsequent calls will use the API key from the system environment
 }
 \note{
-You can specify \code{set_api_key} as environment variable, likely in your \code{.Renviron} file.
+You can specify \code{set_api_key} as environment variable, in your \code{.Renviron} file.
 If you really need one, the sample API key is "66d78397-09c8-4946-8b98-a348804a8040"
 }
 \examples{

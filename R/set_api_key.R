@@ -1,10 +1,11 @@
-#' Setup
+#' Setup API Key
 #'
-#' Setup your session, all subsequent calls will be done using the API key.
+#' Setup your session, all subsequent calls will use the API key from the system environment
 #'
-#' @param key Your API key, freely available at \url{https://wovg-community.portal.prod.api.vic.gov.au/}.
+#' @param key Your API key, freely available at
+#' \url{https://wovg-community.portal.prod.api.vic.gov.au/}.
 #'
-#' @note You can specify \code{set_api_key} as environment variable, likely in your \code{.Renviron} file.
+#' @note You can specify \code{set_api_key} as environment variable, in your \code{.Renviron} file.
 #' If you really need one, the sample API key is "66d78397-09c8-4946-8b98-a348804a8040"
 #'
 #' @examples
@@ -18,6 +19,7 @@
 #' @export
 set_api_key <- function(key){
   assertthat::assert_that(!missing(key), msg = "Missing key")
-  Sys.setenv(api_key = key)
+  Sys.setenv(vic_gov_api_key = key)
 }
+
 
